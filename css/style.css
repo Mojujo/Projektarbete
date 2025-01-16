@@ -1,0 +1,407 @@
+body {
+    background: gray;
+}
+
+body.scroll-lock {
+    overflow: hidden !important;
+}
+
+#background {
+    z-index: -1;
+    opacity: 1;
+    position: absolute;
+    height: 56px;
+    width: 100%;
+    background: #0f0f0f;
+}
+
+main {
+    position: fixed;
+    top: 57px;
+    width: 100%;
+    height: 100%;
+}
+
+div,
+span,
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    max-height: fit-content;
+}
+
+#container {
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid;
+    border-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+
+}
+
+#start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px
+}
+
+#end {
+    padding-right: 8px;
+}
+
+#guide-button {
+    margin: 0;
+}
+
+icon-button {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+}
+
+#button.icon-button {
+    vertical-align: middle;
+    color: inherit;
+    outline: none;
+    background: none;
+    margin: 0;
+    border: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.icon {
+    position: relative;
+    vertical-align: middle;
+    fill: #fff;
+    stroke: none;
+}
+
+.icon-shape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+topbar-logo {
+    display: flex;
+    flex-direction: row;
+    margin: 0 16px 0 16px;
+}
+
+#logo.topbar-logo {
+    padding: 0;
+    align-items: center;
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.logopoint {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#logo-icon {
+    height: 40px;
+    width: 40px;
+    padding-right: 12px;
+}
+
+#title {
+    margin: 0;
+}
+
+@media (max-width: 370px) {
+    #title {
+        font-size: 20px;
+    }
+}
+
+/*** SEARCH BARS ***/
+/**  DESKTOP SEARCH BAR **/
+
+@media (max-width: 431px) {
+    #search-box-container {
+        display: none !important;
+        width: 100%;
+    }
+
+    .media-search-button {
+        display: block !important;
+    }
+}
+
+#search-box-container {
+    flex: 0 1 732px;
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-box-component {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 0 4px;
+    height: 40px;
+    color: #fff;
+}
+
+.search-box-component-input-box {
+    position: relative;
+    align-items: center;
+    border: 1px solid;
+    border-color: white;
+    border-right: 0;
+    background-color: #3b3939;
+    box-shadow: inset 0 1px 2px #eee;
+    border-radius: 40px 0 0 40px;
+    margin-left: 32px;
+    padding: 0 4px 0 16px;
+    display: flex;
+    flex: 1;
+    cursor: text;
+}
+
+.search-box-component-searchform {
+    display: flex;
+    flex: 1;
+}
+
+.search-box-component-input {
+    padding: 1px 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: inherit;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.search-box-component-button {
+    border: 1px solid;
+    border-color: white;
+    background-color: #3b3939;
+    width: 48px;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+button-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    fill: white;
+    stroke: none;
+    width: 24px;
+    height: 24px;
+    z-index: auto;
+
+}
+
+/** DESKTOP SEARCH BAR **/
+/*  MEDIA SEARCH BUTTON */
+
+/*LINE 80*/
+.media-search-box-component {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    color: #fff;
+    z-index: 1;
+
+    pointer-events: none;
+    display: none;
+}
+
+.media-search-box-component.active {
+    pointer-events: auto;
+    display: flex;
+}
+
+.media-search-component-input-box {
+    position: relative;
+    align-items: center;
+    border: 1px solid;
+    border-color: white;
+    background-color: #3b3939;
+    box-shadow: inset 0 0.5px 1px #eee;
+    margin-bottom: 0;
+    display: flex;
+    flex: 1;
+    cursor: text;
+}
+
+.media-search-component-searchform {
+    display: flex;
+    flex: 1;
+}
+
+.media-search-input {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    width: 100%;
+    padding-left: 12px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: inherit;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.media-search-button {
+    display: none;
+    border: 1px solid;
+    border-color: white;
+    background-color: #3b3939;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px 40px 40px 40px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.media-cancel-button {
+    display: block;
+    border: 1px solid;
+    border-color: white;
+    background-color: #3b3939;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/*    MEDIA SEARCH BAR */
+/**** SEARCH BAR ****/
+
+
+/* BANNER IMAGE */
+
+#site-banner {
+    width: 100%;
+    height: 33%;
+    object-fit: cover;
+    position: relative;
+    z-index: -5;
+    top: 0px;
+}
+
+/* LEFT NAVIGATION BAR */
+
+@media (max-width: 431px) {
+    #left-nav-container {
+        width: 36% !important;
+    }
+
+}
+
+#left-nav-container {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: calc(100% - 57px);
+    min-width: 200px;
+    width: 18%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+#left-nav-container.active {
+    display: block;
+}
+
+#left-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+}
+
+.nav-link {
+    width: 85%;
+    height: 40px;
+}
+
+.nav-link.active {
+    background-color: #3b3939;
+    text-decoration: none;
+}
+
+a:hover.nav-link:not(.active) {
+    background-color: #3b393978;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-button {
+    padding: 0 12px 0 16px;
+}
+
+.nav-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* LEFT NAVIGATON BAR */
