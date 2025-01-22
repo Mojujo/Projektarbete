@@ -446,7 +446,9 @@ a:visited {
 }
 
 .content.aboutme {
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-left: 12px;
 }
 
@@ -454,11 +456,17 @@ a:visited {
     border: 1px solid white;
     border-radius: 100%;
     height: 100%;
-    width: 20%;
+    width: 150px;
 }
 
 .about-me-text {
+    width: 80%;
+}
 
+.about-me-title {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .article-container {
@@ -504,6 +512,46 @@ a:visited {
 
 li {
     list-style-type: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+input[type=text].contact,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-wrapper {
+    text-align: center;
+}
+
+#contact-form {
+    width: 75%;
+}
+
+label {
+    color: white;
+    font-size: 24px;
+    padding-left: 6px;
 }
 
 h1,

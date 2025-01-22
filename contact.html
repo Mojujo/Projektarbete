@@ -22,7 +22,26 @@
 
     <main>
         <img id="site-banner" class="faded" src="pictures/cover.png" alt="site banner">
-        
+        <h1 class="content">Kontakta Mig</h1>
+        <div class="form-container">
+            <form id="contact-form" action="submit">
+                <label for="name">Namn</label>
+                <input class="contact" type="text" name="name" id="name" placeholder="Ditt namn . . .">
+
+                <label for="email">Email</label>
+                <input class="contact" type="text" name="email" id="email" placeholder="Din email . . .">
+
+                <label for="subject">Ämne</label>
+                <input class="contact" type="text" name="subject" id="subject" placeholder="Ämne . . .">
+
+                <label for="message">Meddelande</label>
+                <textarea name="meddelande" id="meddelande" placeholder="Meddelande . . ."></textarea>
+
+                <div class="submit-wrapper">
+                    <input type="submit" value="Skicka in">
+                </div>
+            </form>
+        </div>
     </main>
 
     <script src="apps/mediaSearch.js"></script>
