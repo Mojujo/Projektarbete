@@ -1,7 +1,7 @@
 class Header extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = 
-`
+        this.innerHTML =
+            `
 <div id="background" class=""></div>
 <div id="container" class="style-scope">
     <div id="start">
@@ -26,7 +26,7 @@ class Header extends HTMLElement {
         <div role="search" class="search-box-component">
             <div class="search-box-component-input-box">
                 <form action="/results" class="search-box-component-searchform">
-                    <input name="search_query" type="text" autocomplete="off" aria-autocomplete="list" role="combobox"
+                    <input id="searchInput" onkeyup="searchFilter()" name="search_query" type="text" autocomplete="off" aria-autocomplete="list" role="combobox"
                         class="search-box-component-input" aria-label="Search-box" aria-expanded="false"
                         placeholder="Sök">
                 </form>
@@ -52,7 +52,7 @@ class Header extends HTMLElement {
     <div id="media-search" role="search" class="media-search-box-component">
         <div class="media-search-component-input-box">
             <form action="/results" class="media-search-component-searchform">
-                <input name="search_query" type="text" autocomplete="off" aria-autocomplete="none" role="combobox"
+                <input id="mediaInput" onkeyup="searchFilter()" name="search_query" type="text" autocomplete="off" aria-autocomplete="none" role="combobox"
                     class="media-search-input" aria-label="Media Search-box" aria-expanded="false"
                     placeholder="Sök . . .">
             </form>

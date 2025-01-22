@@ -45,6 +45,12 @@
                 <h3 class="nav-title">Skicka ett mail</h3>
             </div>
         </a>
+        <a class="nav-link contact" href="CV.html">
+            <div class="nav-box">
+                <img class="nav-icon" src="svg/academic.svg" alt="academics">
+                <h3 class="nav-title">Mina referenser</h3>
+            </div>
+        </a>
     </nav>
     <hr>
     <footer class="nav-footer">
