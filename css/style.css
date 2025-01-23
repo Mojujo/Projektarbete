@@ -1,5 +1,5 @@
 body {
-    background: #3b3939;
+    background-image: linear-gradient(to right, #3b3939, #1f1f1f);
 }
 
 body.scroll-lock {
@@ -142,6 +142,10 @@ topbar-logo {
     height: 40px;
     width: 40px;
     padding-right: 12px;
+}
+
+.logo-icon.article {
+    padding-left: 12px;
 }
 
 #title {
@@ -461,9 +465,14 @@ a:visited {
 
 .about-me-text {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-me-title {
+    width: 100%;
     margin: 0;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -476,8 +485,11 @@ a:visited {
 }
 
 .article-list {
-    width: 48%;
+    border: 1px, solid, #5e5959;
+    border-radius: 15px;
+    width: 45%;
     padding: 1%;
+    margin: 0.5%;
 }
 
 @media (max-width: 431px) {
@@ -496,10 +508,11 @@ a:visited {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 6px;
 }
 
 .article-title {
-    width: calc(100% - 52px);
+    width: calc(100% - 64px);
 }
 
 #myUL {
@@ -573,4 +586,10 @@ h3 {
 
 #welcome {
     padding: 0 15px 0 15px;
+}
+
+.line-break {
+    width: 80%;
+    margin: 12px 0 0 0;
+    padding: 0px 15px 0 15px;
 }
