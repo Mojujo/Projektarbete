@@ -21,9 +21,13 @@
     </main-navigation>
 
     <main>
-        <img id="site-banner" class="faded" src="pictures/cover.png" alt="site banner">
+        <img id="site-banner" class="faded" srcset="pictures/cover.png" alt="site banner">
         <section class="content aboutme">
-            <img class="chillguy" src="pictures/chillguy.png" alt="just a chill guy">
+            <picture>
+                <source srcset="pictures/chillguy.png" media="(max-width: 431px)">
+                <source srcset="pictures/chillguy-large.png">
+                <img class="chillguy" src="pictures/chillguy-large.png" alt="Just a chill guy">
+            </picture>
             <div class="about-me-text">
                 <h1 class="about-me-title">Oscar Törnqvist </h1>
                 <h3>
