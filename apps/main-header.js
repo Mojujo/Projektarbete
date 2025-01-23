@@ -16,7 +16,7 @@ class Header extends HTMLElement {
         <topbar-logo class="style-scope logo">
             <a class="topbar-logo logopoint" id="logo" aria-label href="index.html" title="Teknikmagasinets Startsida">
                 <div class="icon-shape">
-                    <img id="logo-icon" src="pictures/logo.png" alt="Logo">
+                    <img class="logo-icon" src="pictures/logo.png" alt="Logo">
                     <h2 id="title">Teknikmagasinet</h2>
                 </div>
             </a>
