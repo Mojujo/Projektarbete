@@ -148,8 +148,9 @@ topbar-logo {
     padding-left: 12px;
 }
 
-#title {
+.title {
     margin: 0;
+    width: 100%;
 }
 
 @media (max-width: 370px) {
